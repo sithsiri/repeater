@@ -1,6 +1,6 @@
 @echo off
 REM This is a Windows program only!
-
+pause
 color 02
 echo
 /$$$$$$$                                            /$$                        
@@ -14,7 +14,7 @@ echo
                     | $$                                                        
                     | $$                                                        
                     |__/                                                        
-
+pause
 color 01
 echo    
 echo    
