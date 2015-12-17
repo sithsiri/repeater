@@ -1,22 +1,30 @@
 @echo off
+
 REM This is a Windows program only!
-pause
-color 02
 
+echo Starting...
+cls
 
+type startup.txt
+echo.
+echo.
+echo Hello, %USERNAME%! Welcome to Repeater.
 
-pause
-color 01
-echo    
-echo    
-echo    
-echo Welcome to Repeater. Initializing...
 pause
 cls
-echo Ready.
+echo Initializing...
+echo.
+echo.
+echo Teleporting to user directory...
+cd "C:\Users\%USERNAME%"
+echo Done...
+echo.
+echo Ready. We are now at "C:\Users\%USERNAME%".
+pause
+echo Clearing...
+cls
 
 :loop
-echo 
-SET /P variable="%~dp0">
-%Input%
+set /p input="%cd%>"
+%input%
 goto :loop
