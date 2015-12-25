@@ -1,7 +1,7 @@
 @echo off
 
 REM This is a Windows program only!
-title Repeater v0.0.1
+title Repeater v0.0.1-2
 echo Starting...
 echo Changing color to green
 cls
@@ -19,7 +19,8 @@ cls
 echo Initializing...
 echo.
 echo Changing color to default...
-color 0F
+REM color 0F
+color 07
 echo Done...
 echo.
 echo Teleporting to user directory...
