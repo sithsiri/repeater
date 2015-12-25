@@ -8,4 +8,4 @@
             |_|       
                      
 Batch Command Executer
-version pre-alpha (no version number yet)
+version pre-alpha v0.0.1
