@@ -1,7 +1,7 @@
 @echo off
 
 REM This is a Windows program only!
-
+title Repeater v0.0.1
 echo Starting...
 echo Changing color to green
 cls
