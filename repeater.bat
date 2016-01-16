@@ -7,7 +7,7 @@ cls
 
 type startup.txt
 echo.
-echo To view the license, copy "type %~dp0\LICENSE" and paste it at the prompt.
+echo To view the license, copy "type %~dp0LICENSE" and paste it at the prompt.
 echo.
 echo Hello, %USERNAME%! Welcome to Repeater. Press any key to continue, if you wish.
 
