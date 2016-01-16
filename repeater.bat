@@ -26,7 +26,7 @@ echo Clearing...
 cls
 
 :▐start
-
+cls
 ver
 echo (c) %DATE:~-4% Microsoft Corporation. All rights reserved.
 echo Repeater is repeating...
