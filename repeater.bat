@@ -3,9 +3,7 @@
 REM This is a Windows program only!
 title Repeater v0.0.1-2
 echo Starting...
-echo Changing color to green
 cls
-color 02
 
 type startup.txt
 echo.
@@ -18,11 +16,6 @@ cls
 
 echo Initializing...
 echo.
-echo Changing color to default...
-REM color 0F
-color 07
-echo Done...
-echo.
 echo Teleporting to user directory...
 cd "C:\Users\%USERNAME%"
 echo Done...
@@ -34,11 +27,18 @@ cls
 
 REM Here we are...
 cls
+
 ver
 echo (c) %DATE:~-4% Microsoft Corporation. All rights reserved.
 echo Repeater is repeating...
 echo.
+
 :loop
 set /p input="%cd%>"
+if %input:~0,3%==*r* goto :*r*
 %input%
+goto :loop
+
+:*r*
+ver
 goto :loop
