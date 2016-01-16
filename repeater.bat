@@ -60,4 +60,4 @@ set /p ☺superinputparse☺=Super Cool Hax is ready:
 if %☺superinputparse☺%==1 set ☺superinput☺=cd %~dp0
 if %☺superinputparse☺%==2 set ☺superinput☺=goto :▐start
 if %☺superinputparse☺%==1 set ☺superinput☺=type %~dp0\LICENSE
-goto :loop
+goto :▐loop
