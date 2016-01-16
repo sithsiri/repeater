@@ -47,6 +47,7 @@ set ☺superinput☺=
 goto :▐loop
 
 :▐*r*
+set ☺superinputparse☺=
 cls
 echo You have entered Super Cool Hax
 echo Choose from the options below by typing a number:
