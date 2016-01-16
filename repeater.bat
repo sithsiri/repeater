@@ -1,6 +1,6 @@
 @echo off
 
-REM This is a Windows program only!
+REM This is for Windows Command Prompt.
 title Repeater v0.0.1-2
 echo Starting...
 cls
@@ -25,20 +25,39 @@ echo.
 echo Clearing...
 cls
 
-REM Here we are...
-cls
+:▐start
 
 ver
 echo (c) %DATE:~-4% Microsoft Corporation. All rights reserved.
 echo Repeater is repeating...
 echo.
 
-:loop
-set /p input="%cd%>"
-if %input:~0,3%==*r* goto :*r*
-%input%
-goto :loop
+set ☺superinput☺=
 
-:*r*
-ver
+:▐loop
+
+%☺superinput☺%
+
+set /p δinputδ="%cd%>"
+if %δinputδ:~0,3%==*r* goto :▐*r*
+%δinputδ%
+
+set ☺superinput☺=
+
+goto :▐loop
+
+:▐*r*
+cls
+echo You have entered Super Cool Hax
+echo Choose from the options below by typing a number:
+echo.
+echo 1: Go to the directory from which Repeater is running from.
+echo 2: Restart Repeater.
+echo 3: View the licence for Repeater.
+echo Press enter to go back.
+echo.
+set /p ☺superinputparse☺=Super Cool Hax is ready:
+if %☺superinputparse☺%==1 set ☺superinput☺=cd %~dp0
+if %☺superinputparse☺%==2 set ☺superinput☺=goto :▐start
+if %☺superinputparse☺%==1 set ☺superinput☺=type %~dp0\LICENSE
 goto :loop
