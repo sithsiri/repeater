@@ -42,25 +42,26 @@ REM %☺superinput☺%
 
 set /p δinputδ="%cd%>"
 REM if %δinputδ:~0,3%==*r* goto :▐*r*
+if %δinputδ:~0,3%==*r* goto :▐*r*
 %δinputδ%
 
 REM set ☺superinput☺=
 
 goto :▐loop
 
-REM :▐*r*
-REM set ☺superinputparse☺=
-REM cls
-REM echo You have entered Super Cool Hax
-REM echo Choose from the options below by typing a number:
-REM echo.
-REM echo 1: Go to the directory from which Repeater is running from.
-REM echo 2: Restart Repeater.
-REM echo 3: View the licence for Repeater.
-REM echo Press enter to go back.
-REM echo.
-REM set /p ☺superinputparse☺=Super Cool Hax is ready:
-REM if %☺superinputparse☺%==1 set ☺superinput☺=cd %~dp0
-REM if %☺superinputparse☺%==2 set ☺superinput☺=goto :▐start
-REM if %☺superinputparse☺%==1 set ☺superinput☺=type %~dp0\LICENSE
-REM goto :▐loop
+:▐*r*
+set ☺superinputparse☺=
+cls
+echo You have entered Super Cool Hax
+echo Choose from the options below by typing a number:
+echo.
+echo 1: Go to the directory from which Repeater is running from.
+echo 2: Restart Repeater.
+echo 3: View the licence for Repeater.
+echo Press enter to go back.
+echo.
+set /p ☺superinputparse☺=Super Cool Hax is ready:
+if %☺superinputparse☺%==1 cd %~dp0
+if %☺superinputparse☺%==2 goto :▐start
+if %☺superinputparse☺%==3 type %~dp0\LICENSE
+goto :▐loop
