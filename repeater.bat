@@ -24,7 +24,7 @@ echo.
 echo Ready. We are now at "C:\Users\%USERNAME%".
 echo.
 echo Setting title now
-title dev/sda1/home/%USERNAME%
+title /dev/sda1/home/%USERNAME%
 echo.
 echo Clearing...
 cls
