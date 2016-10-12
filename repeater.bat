@@ -1,4 +1,5 @@
 @echo off
+setlocal EnableDelayedExpansion
 
 REM Everything with a REM is code that doesn't work properly.
 
